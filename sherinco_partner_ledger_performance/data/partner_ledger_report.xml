@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--
+        Keep Odoo's standard Partner Ledger handler and calculations.
+        Only reduce the initial date range from the whole year to the
+        current month. Users can still select any custom period.
+    -->
+    <record id="account_reports.partner_ledger_report" model="account.report">
+        <field name="default_opening_date_filter">this_month</field>
+    </record>
+</odoo>

@@ -6,4 +6,6 @@ Custom Odoo 18 addons for Sherinco.
 
 - `sherinco_partner_ledger_performance`: keeps the standard Partner Ledger calculations and changes its initial date range to the current month to avoid loading a full year by default.
 
-Deployment, module installation, upgrades, and database changes are intentionally outside this repository commit.
+## Safety
+
+This addon does not change accounting calculations, journal items, report SQL, PostgreSQL settings, or indexes. Deployment, installation, upgrades, and database changes are intentionally outside this repository commit.
